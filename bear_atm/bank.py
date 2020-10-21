@@ -62,7 +62,7 @@ class Bank():
         transaction["start_balance"] = fake_bank_data[cardnumber]["ACCOUNTS"][account]
 
         # simple check for error
-        if amount < 0:
+        if amount is not None and amount < 0:
             return None
 
         # show_balance
