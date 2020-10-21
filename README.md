@@ -16,6 +16,9 @@ For simplicity:
 ## Install
 clone this project
 
+## Requirements
+Python 3.7
+
 ## Quick Start
 ### Using ATM API
 An ATM object uses three member variables to control the flow of transactions: `active_cardnumber`, `active_accounts`, `valid_pin`. 

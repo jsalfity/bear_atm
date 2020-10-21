@@ -56,7 +56,7 @@ if __name__ == "__main__":
         elif atm.active_cardnumber and atm.valid_pin:
             print("WELCOME!")
 
-            account, accounts, request, amount, confirm = None, None, None, 0, False
+            account, accounts, request, amount, confirm = None, None, None, None, False
 
             # get account
             accounts = atm.get_accounts()

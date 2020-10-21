@@ -74,7 +74,7 @@ class ATM:
         input: -
         routine:  uses self.active_cardnumber
                 sets self.active_account_list
-        return: (bool) 
+        return: (dict) cardnumber accounts 
         '''
         #bank connected, valid card, valid pin
         self.check_exceptions(  check_bank=True, 
@@ -129,7 +129,7 @@ class ATM:
         '''
         input: (dict) transaction
         routine: append transaction to transaction_history
-        output: -
+        return: -
         '''
         # valid bank, valid card, valid pin
         # active accounts and active acount
@@ -145,7 +145,7 @@ class ATM:
         '''
         input: (bool) 
         routine: resets atm member variables
-        return:
+        return: -
         '''
         self.active_cardnumber = None
         self.active_accounts = {}
