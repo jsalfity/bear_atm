@@ -34,6 +34,9 @@ if __name__ == "__main__":
             print('Insert card number. 0 to cancel:')
             cardnumber = int(input())
             atm.insert_cardnumber(cardnumber)
+            if cardnumber == 0:
+                session_restart = True
+                continue
             
         # input pin
         elif atm.active_cardnumber is not None and not atm.valid_pin:
